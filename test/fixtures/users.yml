@@ -3,3 +3,10 @@ conor:
   email: "conor@mail.com"
   first_name: 'Conor'
   last_name: "O'Callaghan"
+
+jim:
+  profile_name: 'jimhoskins'
+  email: "jhoskins@mail.com"
+  first_name: 'Jim'
+  last_name: "Hoskins"
+
