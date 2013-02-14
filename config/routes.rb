@@ -10,10 +10,12 @@ Treebook::Application.routes.draw do
   end
 
   resources :statuses
+  resources :user_friendships
+
   get 'feed', to: 'statuses#index', as: :feed
   root :to => 'statuses#index'
 
-  get '/:id', to: 'profiles#show'
+  get '/:id', to: 'profiles#show', as: 'profile'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
