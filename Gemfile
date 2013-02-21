@@ -1,16 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
 gem 'devise'
 gem 'simple_form'
+gem 'state_machine'
+gem 'draper'
+gem 'js-routes'
 
 group :test do
   gem 'shoulda'
+  gem 'factory_girl_rails'
 end
 
 group :development, :test do
@@ -18,7 +21,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 
 # Gems used only for assets and not required

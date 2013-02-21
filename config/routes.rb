@@ -1,7 +1,8 @@
 Treebook::Application.routes.draw do
   get "profiles/show"
 
-  
+
+
 
   devise_scope :user do
     get '/register', to: 'devise/registrations#new', as: :register
@@ -18,8 +19,20 @@ Treebook::Application.routes.draw do
   end
 
 
+
+  resources :user_friendships do
+    member do
+      put :accept
+
+
+
+
+    end
+  end
+
+
   resources :statuses
-  resources :user_friendships
+
 
   get 'feed', to: 'statuses#index', as: :feed
   root :to => 'statuses#index'
